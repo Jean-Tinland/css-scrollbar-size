@@ -2,8 +2,9 @@
   "name": "css-scrollbar-size",
   "private": false,
   "version": "1.0.0beta3",
-  "description": "A small utility that retrieves the browser scrollbar' sizes",
+  "description": "A small utility that retrieves the browser scrollbar' size and stores it in CSS variable",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "watch": "babel --watch src ---out-dir lib --extensions '.ts,.tsx'",
     "build": "babel src --out-dir lib --extensions '.ts,.tsx'",
