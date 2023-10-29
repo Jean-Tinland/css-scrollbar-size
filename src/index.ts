@@ -7,6 +7,7 @@ if (!isSSR) {
 function setCssVariable() {
   const sentinelSize = 100;
 
+  // create the sentinel element with its styles
   const sentinel = document.createElement("div");
   const styles = ` 
     display: block;
@@ -20,8 +21,8 @@ function setCssVariable() {
 
   document.body.appendChild(sentinel);
 
+  // check if the DOM is fully loaded, otherwise try again in 100ms
   if (sentinel.clientWidth === 0) {
-    // remove the element and skip the caching
     document.body.removeChild(sentinel);
     setTimeout(setCssVariable, 100);
     return;
