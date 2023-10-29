@@ -1,0 +1,41 @@
+{
+  "name": "css-scrollbar-size",
+  "private": false,
+  "version": "1.0.0beta3",
+  "description": "A small utility that retrieves the browser scrollbar' sizes",
+  "main": "lib/index.js",
+  "scripts": {
+    "watch": "babel --watch src ---out-dir lib --extensions '.ts,.tsx'",
+    "build": "babel src --out-dir lib --extensions '.ts,.tsx'",
+    "tsc": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "keywords": [
+    "scrollbar",
+    "scrollbar-size",
+    "scrollbar-height",
+    "scrollbar-width",
+    "css",
+    "css-scrollbar"
+  ],
+  "author": "Jean Tinland",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-typescript": "^7.23.2",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.js"
+    },
+    "./package.json": "./package.json",
+    "./lib": "./lib"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
+    "sourceMap": false,
+    "resolveJsonModule": false,
+    "allowJs": true,
+    "checkJs": false,
+    "target": "ES5",
+    "outDir": "./lib"
+  },
+  "include": ["./src/**/*.ts"]
+}
