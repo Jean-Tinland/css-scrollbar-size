@@ -1,6 +1,6 @@
 # css-scrollbar-size
 
-A small utility that retrieves the browser scrollbar' size and stores it in CSS variable.
+A small utility that retrieves the browser scrollbar' size and stores it in CSS variable. From there, you can use it in your CSS or JS files.
 
 The script works out of the box: it executes itself so you don't need to call a specific function. It is also SSR safe.
 
@@ -79,6 +79,18 @@ If you use SCSS, you can create the `vw` function then use it to substract the s
 .element {
   width: vw(100);
 }
+```
+
+### In JS
+
+You can also use the scrollbar size in your JS files by extracting its value fron the `:root` element.
+
+```js
+const scrollbarSize = parseInt(
+  getComputedStyle(document.documentElement).getPropertyValue(
+    "--scrollbar-size"
+  )
+);
 ```
 
 ## Browser support
