@@ -1,14 +1,14 @@
 {
   "name": "css-scrollbar-size",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small utility that retrieves the browser scrollbar' size and stores it in CSS variable",
   "main": "lib/css-scrollbar-size.js",
   "types": "lib/css-scrollbar-size.d.ts",
   "scripts": {
     "watch": "babel --watch src --out-dir lib --extensions '.ts,.tsx'",
-    "build": "babel src --out-dir lib --extensions '.ts,.tsx'",
-    "postbuild": "BABEL_ENV=minify babel src --out-dir lib --extensions '.ts,.tsx' --out-file-extension .min.js",
+    "build": "babel src --out-dir lib --extensions '.ts,.tsx'  --no-comments",
+    "postbuild": "BABEL_ENV=minify babel src --out-dir lib --extensions '.ts,.tsx' --out-file-extension .min.js  --no-comments",
     "tsc": "tsc",
     "prepublishOnly": "yarn build"
   },
@@ -39,7 +39,6 @@
   ],
   "exports": {
     ".": "./lib/css-scrollbar-size.min.js",
-    "./package.json": "./package.json",
-    "./lib": "./lib"
+    "./package.json": "./package.json"
   }
 }

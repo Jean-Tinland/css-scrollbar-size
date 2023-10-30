@@ -6,8 +6,8 @@ The script works out of the box: it executes itself so you don't need to call a 
 
 File size:
 
-- **.js**: 1.24 KiB - Gzipped: 589 bytes
-- **.min.js**: 950 bytes - Gzipped: 501 bytes
+- **.js**: 942 bytes - Gzipped: 441 bytes
+- **.min.js**: 734 bytes - Gzipped: 392 bytes
 
 ## Installation
 
@@ -83,7 +83,7 @@ If you use SCSS, you can create the `vw` function then use it to substract the s
 
 ### In JS
 
-You can also use the scrollbar size in your JS files by extracting its value fron the `:root` element.
+You can also use the scrollbar size in your JS files by extracting its value from the `:root` element.
 
 ```js
 const scrollbarSize = parseInt(
