@@ -1,7 +1,10 @@
 const isSSR = typeof document === "undefined" || typeof window === "undefined";
 
 if (!isSSR) {
+  // execture the function when the DOM is loaded
   document.addEventListener("DOMContentLoaded", setCssVariable);
+  // set a default CSS variable
+  document.documentElement.style.setProperty("--scrollbar-size", "0px");
 }
 
 function setCssVariable() {

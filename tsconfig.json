@@ -10,5 +10,5 @@
     "target": "ES5",
     "outDir": "./lib"
   },
-  "include": ["./src/**/*.ts"]
+  "include": ["./src/css-scrollbar-size.ts"]
 }
