@@ -21,6 +21,10 @@
     "css-scrollbar"
   ],
   "author": "Jean Tinland",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jean-Tinland/css-scrollbar-size"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.23.0",
